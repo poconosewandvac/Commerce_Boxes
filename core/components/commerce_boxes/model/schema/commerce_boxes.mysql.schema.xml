@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="commerce_boxes" baseClass="comSimpleObject" platform="mysql" defaultEngine="MyISAM" version="1.1">
+    <object class="Boxes" table="commerce_boxes" extends="comSimpleObject">
+        <field key="name" dbtype="varchar" precision="190" phptype="string" null="false" default="" />
+
+        <!-- Package dimensions -->
+        <field key="dimension_unit" dbtype="varchar" precision="10" phptype="string" null="false" default="" />
+        <field key="length" dbtype="decimal" precision="10,4" phptype="float" null="false" default="0" />
+        <field key="width" dbtype="decimal" precision="10,4" phptype="float" null="false" default="0" />
+        <field key="height" dbtype="decimal" precision="10,4" phptype="float" null="false" default="0" />
+
+        <!-- Quantity restrictions -->
+        <field key="min_items" dbtype="int" precision="10" phptype="int" null="false" default="0" />
+        <field key="max_items" dbtype="int" precision="10" phptype="int" null="false" default="0" />
+
+        <!-- Weight restrictions -->
+        <field key="weight_unit" dbtype="varchar" precision="10" phptype="string" null="false" default="" />
+        <field key="min_weight" dbtype="decimal" precision="10,4" phptype="float" null="false" default="0" />
+        <field key="max_weight" dbtype="decimal" precision="10,4" phptype="float" null="false" default="0" />
+    </object>
+</model>

@@ -43,7 +43,7 @@ class Boxes extends comSimpleObject
     {
         $length = $this->get('length');
 
-        return new Lenth($length, $this->getWeightUnit());
+        return new Length($length, $this->getWeightUnit());
     }
 
     /**
@@ -55,7 +55,7 @@ class Boxes extends comSimpleObject
     {
         $width = $this->get('width');
 
-        return new Lenth($length, $this->getWeightUnit());
+        return new Length($length, $this->getWeightUnit());
     }
 
     /**
@@ -67,7 +67,7 @@ class Boxes extends comSimpleObject
     {
         $height = $this->get('height');
 
-        return new Lenth($height, $this->getWeightUnit());
+        return new Length($height, $this->getWeightUnit());
     }
 
     /**
